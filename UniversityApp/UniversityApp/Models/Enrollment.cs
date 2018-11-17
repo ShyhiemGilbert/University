@@ -11,10 +11,13 @@ namespace UniversityApp.Models
 {
     using System;
     using System.Collections.Generic;
+	using System.ComponentModel.DataAnnotations;
     
     public partial class Enrollment
     {
         public int EnrollmentId { get; set; }
+
+		[Range(0, 4)]
         public Nullable<decimal> Grade { get; set; }
         public int CourseId { get; set; }
         public int StudentId { get; set; }

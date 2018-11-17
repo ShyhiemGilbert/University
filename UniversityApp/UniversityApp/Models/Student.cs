@@ -11,6 +11,7 @@ namespace UniversityApp.Models
 {
     using System;
     using System.Collections.Generic;
+	using System.ComponentModel.DataAnnotations;
     
     public partial class Student
     {
@@ -19,10 +20,13 @@ namespace UniversityApp.Models
         {
             this.Enrollments = new HashSet<Enrollment>();
         }
-    
+		
+		
         public int StudentId { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+		[StringLength(50)]
+		public string FirstName { get; set; }
+		[StringLength(50)]
+		public string LastName { get; set; }
         public Nullable<System.DateTime> EnrollmentDate { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

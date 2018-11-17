@@ -155,6 +155,8 @@
     <Compile Include="Models\Enrollment.cs">
       <DependentUpon>UniversityAppModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Metadata.cs" />
+    <Compile Include="Models\PartialClasses.cs" />
     <Compile Include="Models\Student.cs">
       <DependentUpon>UniversityAppModel.tt</DependentUpon>
     </Compile>

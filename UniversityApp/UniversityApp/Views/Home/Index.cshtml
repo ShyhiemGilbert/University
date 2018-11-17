@@ -3,29 +3,25 @@
 }
 
 <div class="jumbotron">
-    <div>
-        @Html.ActionLink("List of Students", "Index", "Students")<br />
-        @Html.ActionLink("List of Enrollments", "Index", "Enrollments")
-    </div>
-
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
+        <h2>@Html.ActionLink("Students", "Index", "Students")</h2>
         <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            Here you can view current student personal and academic details.
+            You can also add new students, edit existing and delete former.
         </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
     </div>
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <h2>@Html.ActionLink("Enrollments", "Index", "Enrollments")</h2>
+        <p>
+            Here you can enroll students onto courses and update their grades.
+
+        </p>
     </div>
     <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <h2>@Html.ActionLink("Courses", "Index", "Courses")</h2>
+        <p>Course</p>
+
     </div>
+</div>
 </div>

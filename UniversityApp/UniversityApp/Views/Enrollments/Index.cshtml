@@ -35,9 +35,9 @@
             @Html.DisplayFor(modelItem => item.Student.FirstName)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.EnrollmentId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.EnrollmentId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.EnrollmentId })
+            <button class="btn btn-warning">@Html.ActionLink("Edit", "Edit", new { id = item.StudentId }) </button>
+            <button class="btn btn-success">@Html.ActionLink("Details", "Details", new { id = item.StudentId }) </button>
+            <button class="btn btn-danger">@Html.ActionLink("Delete", "Delete", new { id = item.StudentId })</button>
         </td>
     </tr>
 }

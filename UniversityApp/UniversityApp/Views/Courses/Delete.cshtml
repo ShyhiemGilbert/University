@@ -1,38 +1,30 @@
-﻿@model UniversityApp.Models.Enrollment
+﻿@model UniversityApp.Models.Course
 
 @{
     ViewBag.Title = "Delete";
 }
 
-<h2>Delete Enrollment</h2>
+<h2>Delete Course</h2>
 
 <h3>Are you sure you want to delete this?</h3>
 <div>
-    <h4>Enrollment</h4>
+    <h4>Course</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Grade)
+            @Html.DisplayNameFor(model => model.Title)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Grade)
+            @Html.DisplayFor(model => model.Title)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Course.Title)
+            @Html.DisplayNameFor(model => model.Credits)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Course.Title)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Student.FirstName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Student.FirstName)
+            @Html.DisplayFor(model => model.Credits)
         </dd>
 
     </dl>
